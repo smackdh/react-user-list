@@ -24,6 +24,8 @@ const UserInput = (props) => {
     };
 
     props.onAddUser(userData);
+    setUserName("");
+    setUserAge("");
   };
 
   return (
