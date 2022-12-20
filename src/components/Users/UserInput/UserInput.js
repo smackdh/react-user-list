@@ -6,7 +6,6 @@ const UserInput = (props) => {
 
   const userNameInputHandler = (event) => {
     setUserName(event.target.value);
-    console.log(event.target.value);
   };
 
   const userAgeInputHandler = (event) => {
