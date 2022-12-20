@@ -4,8 +4,8 @@ import UserInput from "./components/Users/UserInput/UserInput";
 
 function App() {
   const [userList, setUserList] = useState([
-    // { name: "Suwon", age: 27, id: "u1" },
-    // { name: "Mattias", age: 30, id: "u2" },
+    { name: "Suwon", age: 27, id: "u1" },
+    { name: "Mattias", age: 30, id: "u2" },
   ]);
 
   const addUserHandler = (user) => {
