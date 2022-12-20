@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
 const UserInput = (props) => {
-  const [enteredValue, setEnteredValue] = useState("");
+  const [userName, setUserName] = useState("");
+  const [userAge, setUserAge] = useState("");
 
   const userNameInputHandler = (event) => {
-    setEnteredValue(event.target.value);
+    setUserName(event.target.value);
     console.log(event.target.value);
   };
 
   const userAgeInputHandler = (event) => {
-    setEnteredValue(event.target.value);
-    console.log(event.target.value);
+    setUserAge(event.target.value);
   };
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
-    props.onAddUser(enteredValue);
+    props.onAddUser(userName);
   };
 
   return (
