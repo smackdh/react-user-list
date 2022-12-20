@@ -15,7 +15,13 @@ const UserInput = (props) => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
-    props.onAddUser(userName);
+
+    const userData = {
+      name: userName,
+      age: userAge,
+    };
+
+    props.onAddUser(userData);
   };
 
   return (
