@@ -26,7 +26,7 @@ const UserInput = (props) => {
   };
 
   return (
-    <Card>
+    <Card className={classes.input}>
       <form onSubmit={formSubmitHandler}>
         <label htmlFor="username">Name</label>
         <input
