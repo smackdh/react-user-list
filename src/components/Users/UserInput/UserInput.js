@@ -45,9 +45,19 @@ const UserInput = (props) => {
     setUserAge("");
   };
 
+  const errorHandler = () => {
+    setError(null);
+  };
+
   return (
     <div>
-      {error && <ErrorModal title={error.title} message={error.message} />}
+      {error && (
+        <ErrorModal
+          title={error.title}
+          message={error.message}
+          onCancel={errorHandler}
+        />
+      )}
       <Card className={classes.input}>
         <form onSubmit={formSubmitHandler}>
           <label htmlFor="username">Name</label>
