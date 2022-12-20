@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const UserInput = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
 
-  const userInputHandler = (event) => {
+  const userNameInputHandler = (event) => {
     setEnteredValue(event.target.value);
     console.log(event.target.value);
   };
@@ -22,7 +22,7 @@ const UserInput = (props) => {
     <form onSubmit={formSubmitHandler}>
       <div>
         <label>Name</label>
-        <input type="text" onChange={userInputHandler}></input>
+        <input type="text" onChange={userNameInputHandler}></input>
       </div>
       <div>
         <label>Age(Years)</label>
