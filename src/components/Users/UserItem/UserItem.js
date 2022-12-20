@@ -3,8 +3,8 @@ import "./UserItem.css";
 const UserItem = (props) => {
   return (
     <li className="user-item">
-      <div>{props.name}</div>
-      <div>${props.age}</div>
+      <h2>{props.name}</h2>
+      <div>Age: {props.age}</div>
     </li>
   );
 };

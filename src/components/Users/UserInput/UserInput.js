@@ -14,7 +14,6 @@ const UserInput = (props) => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
-
     const userData = {
       name: userName,
       age: userAge,
@@ -27,11 +26,19 @@ const UserInput = (props) => {
     <form onSubmit={formSubmitHandler}>
       <div>
         <label>Name</label>
-        <input type="text" onChange={userNameInputHandler}></input>
+        <input
+          type="text"
+          value={userName}
+          onChange={userNameInputHandler}
+        ></input>
       </div>
       <div>
         <label>Age(Years)</label>
-        <input type="number" onChange={userAgeInputHandler}></input>
+        <input
+          type="number"
+          value={userAge}
+          onChange={userAgeInputHandler}
+        ></input>
       </div>
       <button type="submit">Add</button>
     </form>
