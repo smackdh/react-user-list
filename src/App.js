@@ -8,11 +8,12 @@ function App() {
     { name: "Mattias", age: 30, id: "u2" },
   ]);
 
-  const addUserHandler = (enteredName) => {
+  const addUserHandler = (user) => {
     setUserList((previousUsers) => {
       const updatedUserList = [...previousUsers];
       updatedUserList.unshift({
-        name: enteredName,
+        name: user.name,
+        age: user.age,
         id: Math.random().toString(),
       });
       return updatedUserList;

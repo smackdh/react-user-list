@@ -14,6 +14,7 @@ const UserInput = (props) => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
+
     const userData = {
       name: userName,
       age: userAge,
