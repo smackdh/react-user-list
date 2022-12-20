@@ -22,7 +22,7 @@ const UserInput = (props) => {
       return;
     }
 
-    if (userAge < 1) {
+    if (+userAge < 1) {
       return;
     }
     const userData = {
