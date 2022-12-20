@@ -21,6 +21,10 @@ const UserInput = (props) => {
     if (userName.trim().length === 0 || userAge.trim().length === 0) {
       return;
     }
+
+    if (userAge < 1) {
+      return;
+    }
     const userData = {
       name: userName,
       age: userAge,
