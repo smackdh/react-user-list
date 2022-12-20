@@ -15,6 +15,7 @@ function App() {
         name: enteredName,
         id: Math.random().toString(),
       });
+      return updatedUserList;
     });
   };
 
