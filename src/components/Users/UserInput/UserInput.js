@@ -31,7 +31,7 @@ const UserInput = (props) => {
       </div>
       <div>
         <label>Age(Years)</label>
-        <input type="text" onChange={userAgeInputHandler}></input>
+        <input type="number" onChange={userAgeInputHandler}></input>
       </div>
       <button type="submit">Add</button>
     </form>
